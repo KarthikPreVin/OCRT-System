@@ -43,7 +43,7 @@ public class Login extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if (!username.equals("admin") || !password.equals("admin    ")) {
+        if (!username.equals("admin") || !password.equals("admin")) {
             writer.println("<script> alert('Invalid username/password');history.back();</script>");
             return;
         }
